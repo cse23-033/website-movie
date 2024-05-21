@@ -1,0 +1,83 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/Background3.jpeg);
+    background-size: cover;
+    background-position: center;
+  
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a ::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s ease;
+  }
+  
+  li a :hover ::after {
+    width : 100%
+  }
+  
+  .btn-outline-success {
+    background-color: lightskyblue;
+    border: white;
+  }
+  
+  
+  /**/
+  
+   .text{
+   position: relative;
+   margin: 10px;
+   background-size: 100% 100%;
+   background-position: center;
+   transition:0.5s;
+   display:inline-block;
+   border-radius: 2px;
+   font-size: 15px;
+   }
+  
+   .text:hover{
+   background-size: 110% 110%;
+   }
+  
+   .text:after{
+   content: attr(data-text);
+   position: absolute;
+   top: 92.8%;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   white-space: pre-line;
+   overflow: hidden;
+   background-color: rgba(0,0,0,0.3);
+   color: #FFFFFF;
+   padding: 0 8px;
+   transition:0.5s;
+   text-align: left;
+   }
+  
+   .text:hover:after{
+   top: 0;
+   padding: 10px;
+   background-color: rgba(0,0,0,0.6);
+   border-radius: 5px;
+   }
+  
+   .text:first-line{
+   color: #009688;
+   font-weight:bold; 
+   font-size:1.3em;
+   text-align: left;
+   }
+    

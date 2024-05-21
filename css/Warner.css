@@ -1,0 +1,167 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/Background3.jpeg);
+  background-size: cover;
+  background-position: center;
+
+}
+ 
+ li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a ::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s ease;
+}
+
+li a :hover ::after {
+  width : 100%
+}
+
+.btn-outline-success {
+  background-color: lightskyblue;
+  border: white;
+}
+
+.content{
+  position: absolute;
+  top: 30%;
+  margin-left: 380px;
+  text-align: center;
+  color:white;
+}
+
+.content h1{
+  font-size: 60px;
+  margin-top: 80px;
+}
+
+.slideshow{
+  width: 350px;
+  height: 400px;
+  position: relative;
+  margin-top: 100px;
+  overflow: hidden;
+  border: #009688 solid 2px;
+}
+
+.slideshow-item{
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  animation: cycleImages 40s infinite;
+  opacity: 0;
+}
+
+.slideshow-item:nth-child(1){
+  animation-delay: 10s;
+}
+
+.slideshow-item:nth-child(2){
+  animation-delay: 20s;
+}
+
+.slideshow-item:nth-child(3){
+  animation-delay: 30s;
+}
+
+.slideshow-item:nth-child(4){
+  animation-delay: 40s;
+}
+
+.slideshow-item:nth-child(5){
+  animation-delay: 50s;
+}
+
+.slideshow-item:nth-child(6){
+  animation-delay: 60s;
+}
+
+.slideshow-item img{
+  width: 350px;
+  height: 400px;
+}
+
+
+
+@keyframes cycleImages {
+  25%{
+      opacity: 1;
+  }
+  45%{
+      opacity: 0;
+  }
+}
+
+.footer-basic {
+  padding:40px 0;
+  background-color: rgb(37, 36, 36);
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+
+ 

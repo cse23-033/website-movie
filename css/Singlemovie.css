@@ -1,0 +1,18 @@
+.header {
+    color: white;
+
+}
+
+.description {
+    color: white;
+    font-size: x-small;
+    float: right;
+}
+
+.image-container {
+    float: left;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+
+
